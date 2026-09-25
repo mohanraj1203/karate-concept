@@ -1,0 +1,6 @@
+{
+  "note": "order-data holds example payload shapes; cartId is dynamic at runtime",
+  "createOrderShape": {
+    "cartId": 0
+  }
+}

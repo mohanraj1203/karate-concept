@@ -1,0 +1,18 @@
+{
+  "addItem": {
+    "productId": 3,
+    "quantity": 2
+  },
+  "addSecondItem": {
+    "productId": 7,
+    "quantity": 1
+  },
+  "invalidQuantity": {
+    "productId": 3,
+    "quantity": 0
+  },
+  "invalidProduct": {
+    "productId": 99999,
+    "quantity": 1
+  }
+}
