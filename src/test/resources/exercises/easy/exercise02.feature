@@ -7,6 +7,15 @@ Feature: Exercise 02 - Get product and check fields
   # HINTS:
   #   1. Use "Given path 'api/products/2'" (see Scenario 02)
   #   2. Use "match" for each field (see Scenario 03)
+  Given path 'api/products/2'
+  When method GET 
+  Then status 200
+  And match response.id == 2
+  And match response.name == 'Dell XPS 13'
+  And match response.category == 'laptop'
+  And match response.price == '#number'
+
+  
 
   Background:
     * url baseUrl
