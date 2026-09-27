@@ -21,6 +21,6 @@ public class KarateTestRunner {
         // Karate prefixes that path with the runner's package and fails with
         // "not found: com/example/smartcart//Users/...". Resolving from the
         // classpath root keeps both ./gradlew test and IDE runs working.
-        return Karate.run("classpath:features");
+        return Karate.run("classpath:exercises");
     }
 }

@@ -8,6 +8,13 @@ Feature: Exercise 03 - Create a product
   # HINTS:
   #   1. Use "And request { ... }" with the body above (see Scenario 05)
   #   2. Expect status 201, not 200
+  Given path 'api/products'
+  And request {name: 'My Tablet', description: 'Exercise tablet', price: 299.99, category: 'tablet', stock: 7 }
+  When method POST
+  Then status 201
+  And match response.id == '#number'
+  And match response.name == 'My Tablet' 
+  
 
   Background:
     * url baseUrl
